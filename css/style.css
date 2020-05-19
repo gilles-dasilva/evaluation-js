@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Merienda';
+}
+h1{
+    color: #FFF;
+    text-align: center;
+}
+h2{
+    font-size: 1.5em;
+}
+h2, h3{
+    color:#2F4073;
+}
+
+/*Header*/
+
+header {
+    background-color: #061339;
+}
+nav a{
+    margin-left: 50px;
+    color:#FFF;
+}
+
+/*Faire en sorte que le background prenne toute la largeur !!!! */
+.section-1{
+    background-image: url(../img/background.jpg);
+    background-repeat: x;
+    padding: 70px;  
+}
+
+/*Main*/
+
+main{
+    background-color: #ebebeb;
+}
+
+/*Formulaire*/
+form{
+    border: 2px solid grey;
+    border-radius: 3px;
+    margin: 25px auto 0;
+    padding: 20px;
+}
+/*Erreur Formulaire*/
+/* Rendre les bordures du form rouge en cas d'erreur*/
+p.error {
+    color: red;
+    display: none;   
+}
+
+.form-border{
+    border: 2px solid red;
+    border-radius: 3px;
+    margin: 25px auto 0;
+    padding: 20px;
+}
+.danger{
+    border: 2px solid red;    
+}
+.success {
+    border: 2px solid rgb(240, 237, 237);
+    background: green;
+    color: #fff;   
+}
+
+/*Agrandir et centrer le bouton "envoyer" !!!!
+form #btn{
+}
+*/
+
+/* Section 2 */
+.section-2{
+    margin-top: 60px;
+    margin-bottom: 60px;   
+}
+
+/*Section 3 */
+.section-3{
+    background-color: #cccccc;
+    padding: 2rem;
+}
+
+.section-3 img{
+    background-color: #7885A5;
+	width: 220px;
+    height: 220px;
+}
+
+/*Utiliser le .fadeIn() pour que le hover s'active au survol de la section 3 !!!!*/
+
+.section-3 img:hover{
+    animation: fadein 2s;
+    background-color: #061339;
+}
+    
+/*Footer*/
+
+footer{
+    background-color: #061339;
+}
+
+footer p{
+    color: white;
+    right:300px; 
+}
+
+
+@media screen and (min-width: 576px){
+}
+
+
+
+/*Voici les étapes sur lesquels je bloque 
+-Afficher le background de la section 1 sur toute la largeur
+-Transformer le border du form en rouge si erreur
+-centrer le "envoyer" du bouton
+-activer le hover au survol de ma section 3 (avec le fadeIn je pense)
+-ajuster la couleur de mon img tete-chat au backgroud color de ma section 3
+-Ayant commencé en desktop first je me suis retrouvé bloqué sur la version mobile, mon formulaire s'affiche au dessus des photos
+
